@@ -21,7 +21,7 @@ const initialState = {
 };
 
 // reducer에서는 상태의 불변성을 유지하면서 데이터에 변화를 일으켜 주어야 한다. 이 작업을 할 때는 spread(...)연산자를 사용하면 편하다.
-// state가 undefined일 떄는 initialState를 기본값으로 사용
+// state가 undefined일 떄는 initialState를 기본값으로 사용한다.
 function reducer(state = initialState, action) {
   // action.type에 따라 다른 작업을 처리함
   switch (action.type) {
